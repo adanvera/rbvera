@@ -124,7 +124,7 @@ section.sections-block {
     display: inline-grid;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 376px; */
 }
 
 .owl-carousel .owl-item img.svimg {
@@ -144,7 +144,7 @@ section.sections-block {
 }
 
 a.nav-link.btn-ctn.srv {
-    width: 70%;
+    /* width: 70%; */
     text-align: center;
     font-size: 14px;
     height: 30px;
@@ -323,3 +323,70 @@ div#herocontain {
     width: 150px !important;
     height: 427px !important;
 } */
+
+div#herocontain {
+    height: 100vh;
+}
+
+.container-fluid.background{
+    position: relative;
+}
+
+.dataaa {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+}
+
+.owl-stage {
+    display: flex;
+}
+
+.owl-item.active {
+    height: 432px !important;
+    width: 310px !important;
+}
+
+.titlesrv {
+    word-break: break-all;
+}
+
+.srvimg {
+    width: 80%;
+}
+
+.owl-item.active {
+    margin-left: 25px;
+}
+
+.owl-item.active:last-child{
+    margin-left: 0px;
+}
+
+div#carouselservowl .owl-stage-outer .owl-stage {
+    justify-content: center;
+}
+
+.item-sv .srvimg img.svimg {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+div#divsecserrv {
+    justify-content: center;
+    text-align: center;
+}
+
+div#divsecserrv {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ctn-serv {
+    word-break: break-all;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
