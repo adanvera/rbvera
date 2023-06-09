@@ -1,0 +1,103 @@
+[builderList]
+modelClass = "AdanVera\Rbvera\Models\Service"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No se han encontrado registros"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+==
+{% set services = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+{% set pageNumber = builderList.pageNumber %}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 4,
+                },
+                1000: {
+                    items: 5,
+                },
+            },
+        });
+    });
+</script>
+
+<div class="container-fluid" id="mainserv">
+
+    <div class="container">
+        <section class="sections-block">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2 class="subtitle">Ofrecemos servicos</h2>
+                        <h2 class="subtitle">de la más alta calidad</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row divisor servicios">
+                <img
+                    src="{{ 'assets/images/divisor.png'|theme }}"
+                    alt="divisor"
+                />
+            </div>
+
+            <div>
+                
+            </div>
+            
+            <div class="row justify-content-center" id="carouselserv">
+                <div class="col-md-10" id="srvitemscte">
+                    <div class="owl-carousel owl-theme services-ctn">
+                        {% for service in services %}
+                            <div class="item-sv">
+                                <div class="srvimg">
+                                    <img
+                                        class="svimg"
+                                        src="{{ service.imageservice.path }}"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="titlesrv">
+                                    <h4>{{ service.name }}</h4>
+                                </div>
+                                <div class="ctn-serv">
+                                    <span>
+                                        {{ service.description}}
+                                    </span>
+                                </div>
+                                <div class="ctaservice">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-ctn srv" href="#"
+                                            >Ver más</a
+                                        >
+                                    </li>
+                                </div>
+                            </div>
+
+                            {# <li>
+                                <a href="{{ service.url }}">
+                                    {{ service.name }}
+                                </a>
+                            </li> #}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

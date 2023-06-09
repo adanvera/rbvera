@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: 'adanvera.rbvera::lang.plugin.name'
+        type: text
+        default: 'adanvera.rbvera::lang.plugin.name'
+        searchable: true
+        sortable: true
+    description:
+        label: 'adanvera.rbvera::lang.plugin.description'
+        type: text
+        searchable: true

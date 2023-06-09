@@ -1,0 +1,11 @@
+plugin:
+    name: 'adanvera.rbvera::lang.plugin.name'
+    description: 'adanvera.rbvera::lang.plugin.description'
+    author: rbvera
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Servicios
+        url: adanvera/rbvera/services
+        icon: icon-briefcase

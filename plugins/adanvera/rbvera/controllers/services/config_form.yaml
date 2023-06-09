@@ -1,0 +1,10 @@
+name: Services
+form: $/adanvera/rbvera/models/service/fields.yaml
+modelClass: AdanVera\Rbvera\Models\Service
+defaultRedirect: adanvera/rbvera/services
+create:
+    redirect: 'adanvera/rbvera/services/update/:id'
+    redirectClose: adanvera/rbvera/services
+update:
+    redirect: adanvera/rbvera/services
+    redirectClose: adanvera/rbvera/services

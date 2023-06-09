@@ -1,0 +1,27 @@
+fields:
+    name:
+        label: 'Nombre de servicio'
+        span: full
+        type: text
+    description:
+        label: 'Descripción del servicio'
+        span: full
+        type: text
+    imageservice:
+        label: 'Imagen de servicio'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    slug:
+        label: slug
+        span: left
+        preset:
+            field: name
+            type: slug
+        type: text

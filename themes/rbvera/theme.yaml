@@ -1,0 +1,63 @@
+name: Vera
+description: "Theme created by Adán Vera"
+author: Adán Vera
+homepage: ""
+code: ""
+
+form:
+  tabs:
+    fields:
+      logo_site:
+        label: Logotipo PNG 
+        comment: Logotipo de imagen para sitio web
+        tab: General
+        type: mediafinder
+        imageHeight: 100
+        imageWidth: 100
+      hero_background:
+        label: Imagen de background
+        comment: La imagen background del hero que tendra la web
+        tab: General
+        type: mediafinder
+        imageHeight: 250
+        imageWidth: 250
+      site_name:
+        label: Nombre de sitio web
+        comment: El nombre que tendra la web
+        default: Vera Arquitectura
+        tab: General
+        type: text
+      hero_h_uno_part_one:
+        label: Titulo inicial parte 1
+        comment: Texto que se muestra en el incio
+        tab: General
+        type: text
+      hero_h_uno_part_two:
+        label: Titulo inicial parte 2
+        comment: Texto que se muestra en el incio
+        tab: General
+        type: text
+      hero_text_p:
+        label: Texto incial del inicio
+        comment: Texto que se muestra en el incio
+        tab: General
+        type: text
+      phone_number:
+        label: Numro de contacto
+        comment: Numero de contacto de telefono/celular
+        tab: General
+        type: text
+      localtion:
+        label: Ubicación (ej Caaguazú, Paraguay)
+        comment: Ciudad, Pais
+        tab: General
+        type: text
+      localtion_map:
+        label: Ubicación en mapa (codigo de google maps iframe)
+        comment: iframe de google para ubicación
+        tab: General
+        type: text
+
+
+
+  
